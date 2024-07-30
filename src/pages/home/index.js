@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { faArrowRight, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import back from '../../assets/img/back.avif';
 import img1 from '../../assets/img/1.avif';
 import img2 from '../../assets/img/2.avif';
 import img3 from '../../assets/img/3.avif';
@@ -167,12 +166,6 @@ const Home = () => {
                         <Slider imgs={sliderSecond} />
                     </div>
                     <Button head={'Request a Demo'} classname={'sliderRequestBtn'}/>
-                    {/* <div className='positionRelative btn4'>
-                        <span>Request a Demo</span>
-                        <div className='btn'>
-                            <FontAwesomeIcon icon={faArrowRight} />
-                        </div>
-                    </div> */}
                 </div>
             </section>
             <section className='hoverPlay'>
