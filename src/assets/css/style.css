@@ -1,0 +1,790 @@
+@import url('main.css');
+
+header::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(40px);
+    filter: blur(40px);
+    background-color: var(--white-text-color);
+    z-index: -1;
+}
+header{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+header .container .row {
+    padding: 20px 0;
+}
+
+header .container .row .col-4 a {
+    font-weight: 900;
+    font-family: system-ui;
+    text-decoration: none;
+    color: var(--text-color2);
+    font-size: 20px;
+}
+header .container .row .col-6 span{
+    cursor: pointer;
+    font-weight: 500;
+    font-family: system-ui;
+}
+.button {
+    padding: 14px 22px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.button a {
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--black-text-color);
+}
+
+.button .insideBtn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+
+.headerBtn {
+    background-color: var(--text-color);
+}
+
+.headerBtn .insideBtn {
+    background-color: var(--effect-text-color);
+}
+
+.modal-title.h4 {
+    font-weight: 900;
+    font-family: system-ui;
+    color: var(--text-color2);
+    font-size: 20px;
+}
+
+.modal-body {
+    background-color: var(--background-color);
+}
+
+.modal-body ul li {
+    list-style: none;
+    margin: 55px 0;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-family: ABC Repro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body ul li:hover {
+    background-color: rgb(223, 228, 234);
+    border-radius: 30px;
+}
+
+.modal-body .btn1 {
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: var(--text-color);
+    padding: 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    width: 95%;
+    margin-right: 10px;
+}
+
+.modal-body .btn1 .btn {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background-color: var(--effect-text-color);
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+
+.home .row h1 {
+    font-size: 80px;
+}
+
+.home .row p {
+    font-size: 20px;
+    color: var(--text-color2);
+}
+
+.home .dFlex {
+    margin-top: 22px;
+}
+
+.homeBtn {
+    background-color: var(--effect-text-color);
+    width: 18%;
+}
+
+.homeBtn .insideBtn {
+    background-color: var(--effect-text-color2);
+}
+
+.homeBtn1 {
+    background-color: var(--text-color);
+    width: 18%;
+}
+
+.homeBtn1 .insideBtn {
+    background-color: var(--white-text-color);
+}
+
+.playVideo {
+    background-image: url(../img//background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 700px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.playVideo .container {
+    position: absolute;
+    top: 92px;
+    left: 70px;
+    text-align: center;
+}
+
+.playVideo .container video {
+    width: 55%;
+}
+
+.RequestDemo {
+    background-image: url(../img/back.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.RequestDemo::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(14 14 14 / 60%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.RequestDemo h2 {
+    font-size: 50px;
+    color: var(--white-text-color);
+}
+
+.RequestDemo p {
+    font-size: 18px;
+    color: var(--white-text-color);
+}
+
+.requestBtn {
+    background-color: var(--effect-text-color);
+    width: 30%;
+}
+
+.requestBtn .insideBtn {
+    background-color: var(--effect-text-color2);
+}
+
+.trustedBusiness {
+    padding-top: 25px;
+    background-color: var(--container-color);
+}
+
+.slider .row {
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .row ul {
+    list-style: none;
+    animation: 8s marquee infinite linear;
+    display: flex;
+}
+
+.trustedBusiness .slider .row ul li img {
+    max-height: 80px;
+    margin: 0px 70px;
+}
+
+.slider .logo::after,
+.slider .logo::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+}
+
+.slider .logo::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.slider .logo::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.videoPlatform .container .row {
+    padding: 30px 10px;
+}
+
+.videoPlatform .container .row h5 {
+    font-size: 20px;
+}
+
+.videoPlatform .container .row h1 {
+    font-size: 45px;
+}
+
+.logoScroll {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    background-color: var(--container-color);
+}
+
+.logoScroll .container .row h2 {
+    font-size: 20px;
+}
+
+.logoScroll .container .row h1 {
+    font-size: 45px;
+}
+
+.logoScroll .container .positionRelative ul li {
+    background-color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    height: 220px;
+    width: 260px;
+    align-content: center;
+}
+
+.logoScroll .slider .row ul li img {
+    height: 150px;
+    width: 150px;
+}
+
+.sliderRequestBtn {
+    background-color: var(--text-color);
+    margin: 10px auto;
+}
+
+.sliderRequestBtn .insideBtn {
+    background-color: var(--white-text-color);
+}
+
+.hoverPlay .container .row h5 {
+    padding-top: 20px;
+}
+
+.hoverPlay .container .row h1 {
+    font-size: 3.125rem;
+    line-height: 1;
+    letter-spacing: -.15625rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.hoverPlay .container .row .col-4 video {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+
+.hoverPlay .container .row .col-4 {
+    transition: all .65s linear;
+    position: relative;
+}
+
+.hoverPlay .container .row .col-4:not(.isActive) {
+    flex: 1 0 0px;
+    width: auto;
+}
+
+.hoverPlay .container .row .col-4.isActive {
+    width: auto;
+    flex: 2 0 0px;
+}
+
+.hoverPlay .container .row .col-4 .play {
+    background-color: white;
+    height: 28px;
+    width: 44px;
+    text-align: center;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.discover {
+    padding: 30px 0;
+}
+
+.discover .col-6 img {
+    width: 100%;
+    height: 90%;
+    border-radius: 25px;
+}
+
+.discover .col-6 .col-5 span {
+    background-color: var(--text-color);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 12px 10px;
+}
+
+.discover .col-6 .col-5 h5 {
+    padding: 20px 0;
+}
+
+.video .row h3{
+    width: 80%;
+}
+.video .row .btn {
+    background-color: var(--effect-text-color);
+    border-radius: 5px;
+    width: 20%;
+}
+
+.footer {
+    background-color: black;
+    color: var(--white-text-color);
+    padding: 30px 0;
+}
+
+.footerBtn {
+    background-color: var(--effect-text-color);
+    width: 30%;
+    color: var(--black-text-color);
+}
+
+.footerBtn .insideBtn {
+    background-color: var(--effect-text-color2);
+}
+
+.footerBtn1 {
+    background-color: grey;
+    width: 50%;
+}
+
+.footerBtn1 .insideBtn {
+    background-color: var(--black-text-color);
+    color: var(--black-text-color);
+}
+
+.footer .button svg.svg-inline--fa.fa-arrow-right {
+    color: white;
+}
+
+.modal .modal-body {
+    background-color: white;
+}
+
+.modal .modal-body .row {
+    justify-content: center;
+}
+
+.modal .modal-body .row .col-9 {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.modal .modal-body .row .col-9 img {
+    margin-right: 20px;
+}
+
+.modal .modal-body .row .col-9:hover {
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+
+.modal .modal-body form {
+    text-align: -webkit-center;
+}
+
+.modal-body form .mb-3 {
+    width: 75%;
+}
+.modal-body button{
+    background-color: var(--effect-text-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+}
+.modal-body .offcanvasBtn {
+    width: 95%;
+    padding: 20px;
+    background-color: var(--text-color);
+}
+
+.offcanvasBtn .insideBtn {
+    background-color: var(--effect-text-color);
+}
+
+.modal-body .row p span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media(max-width:1200px){
+    .headerBtn{
+        width: 30%;
+    }
+    .homeBtn{
+        width: 20%;
+    }
+    .homeBtn1{
+        width: 20%;
+    }
+    .playVideo .container{
+        top: 140px;
+    }
+    .requestBtn{
+        width: 38%;
+    }
+    .footerBtn{
+        width: 35%;
+    }
+    .footerBtn1{
+        width: 65%;
+    }
+}
+@media(max-width:992px){
+    .headerBtn{
+        width: 40%;
+    }
+    .home .row h1 {
+        font-size: 70px;
+    }
+    .homeBtn{
+        width: 30%;
+    }
+    .homeBtn1{
+        width: 30%;
+    }
+    .playVideo .container{
+        top: 175px;
+        left: 125px;
+    }
+    .playVideo .container video{
+        width: 60%;
+    }
+    .RequestDemo h2{
+        font-size: 35px;
+    }
+    .requestBtn{
+        width: 52%;
+    }
+    .video .row h3{
+        width: 80%;
+        font-size: 20px;
+    }
+    .sliderRequestBtn{
+        width: 40%;
+    }
+    .hoverPlay .container .row .col-4 video{
+        height: 380px;
+    }
+    .discover .row .col-4 h1{
+        margin-bottom: 20px;
+    }
+    .discover .col-4{
+        width: 100%;
+    }
+    .discover .col-6{
+        width: 100%;
+    }
+    .footerBtn{
+        width: 80%;
+    }
+    .footerBtn1{
+        width: 80%;
+    }
+}
+@media(max-width:865px){
+    .playVideo{
+        margin: 0;
+    }
+    .playVideo .container{
+        top: 200px;
+        left: 75px;
+    }
+    .playVideo .container video{
+        width: 50%;
+    }
+}
+@media(max-width:767px){
+    .headerBtn{
+        width: 50%;
+    }
+    .home .row h1{
+        font-size: 55px;
+    }
+    .home .row p{
+        font-size: 15px;
+    }
+    .home .dFlex{
+        display: block;
+    }
+    .homeBtn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .homeBtn1{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .playVideo{
+        background-image: url(../img/mobile_bg.avif);
+        margin-top: 20px;
+    }
+    .playVideo .container{
+        top: 200px;
+        left: 115px;
+    }
+    .playVideo video{
+        width: 50%;
+    }
+    .RequestDemo{
+        background: none;
+    }
+    .RequestDemo::before{
+        background: none;
+    }
+    .RequestDemo .container .row .col-8{
+        width: 100%;
+    }
+    .RequestDemo .container .row .col-8 h2{
+        color: var(--black-text-color);
+        font-size: 35px;
+    }
+    .RequestDemo .container .row .col-8 p{
+        color: var(--black-text-color);
+    }
+    .requestBtn{
+        width: 100%;
+    }
+    .trustedBusiness .container .col-7{
+        width: 100%;
+    }
+    .trustedBusiness .slider .row ul li img{
+        max-height: 50px;
+        margin: 0 50px;
+    }
+    .videoPlatform .container .row h1 {
+        font-size: 30px;
+    }
+    .videoPlatform .container .row{
+        padding: 10px;
+    }
+    .videoPlatform .container .row .col-5{
+        width: 100%;
+        text-align: center;
+    }
+    .videoPlatform .container .row .col-5 img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .logoScroll .container .row h1{
+        font-size: 35px;
+    }
+    .logoScroll .slider .row{
+        overflow: visible;
+    }
+    .logoScroll .slider .logo::before{
+        background: none;
+    }
+    .logoScroll .slider .logo::after{
+        background: none;
+    }
+    .logoScroll .slider .row ul{
+        animation: none;
+    }
+    .logoScroll .slider .row ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logoScroll .slider .row ul li {
+        width: 45%;
+        margin: 5px;
+    }
+    .logoScroll .slider .row ul li img{
+        height: auto;
+        width: 100%;
+    }
+    .sliderRequestBtn{
+        width: 70%;
+    }
+    .hoverPlay .container .row h1 {
+        font-size: 2.125rem;
+    }
+    .hoverPlay .container .row .col-4{
+        width: 100%;
+    }
+    .hoverPlay .container .row .col-4:not(.isActive){
+        width: 100%;
+        flex: none;
+    }
+    .discover .row .col-4 h1{
+        margin-bottom: 20px;
+    }
+    .discover .col-4{
+        width: 100%;
+    }
+    .discover .col-6{
+        width: 100%;
+    }
+    .footer .col-5{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:750px){
+    .playVideo .container{
+        top: 218px;
+        left: 70px;
+    }
+    .playVideo video{
+        width: 60%;
+    }
+}
+@media(max-width:650px){
+    .playVideo .container{
+        top: 218px;
+        left: 50px;
+    }
+    .playVideo video{
+        width: 60%;
+    }
+}
+@media(max-width:580px){
+    .homeBtn{
+        width: 95%;
+    }
+    .homeBtn1{
+        width: 95%;
+    }
+    .playVideo .container{
+        top: 218px;
+        left: -2px;
+    }
+    .playVideo video{
+        width: 60%;
+    }
+}
+@media(max-width:575px){
+    .home .dFlex{
+        margin: 20px;
+    }
+    .playVideo .container{
+        left: 4px;
+    }
+    .playVideo .container video{
+        width: 55%;
+    }
+}
+@media(max-width:518px){
+    .home .row h1 {
+        font-size: 50px;
+    }
+    .home .dFlex{
+        margin: 10px;
+    }
+    .footer .row{
+        padding: 20px;
+    }
+}
+@media(max-width:500px){
+    .headerBtn{
+        width: 35%;
+    }
+    .headerBtn .insideBtn{
+        display: none;
+    }
+}
+@media(max-width:473px){
+    .headerBtn{
+        background: none;
+    }
+    .home .row h1{
+        font-size: 40px;
+    }
+    .playVideo .container video{
+        width: 70%;
+    }
+    .discover .col-5{
+        width: 100%;
+    }
+}
+@media(max-width:383px){
+    .headerBtn{
+        background: none;
+    }
+    .home .row h1{
+        font-size: 30px;
+    }
+    .playVideo .container video{
+        width: 85%;
+    }
+    .discover .col-5{
+        width: 100%;
+    }
+}
+@media(max-width:375px){
+    .headerBtn .insideBtn{
+        display: none;
+    }
+    .home .row h1 {
+        font-size: 35px;
+    }
+    .playVideo .container video{
+        width: 85%;
+    }
+    .video .row h3{
+        width: 100%;
+    }
+    .video .row .btn {
+        width: 100%;
+    }
+}

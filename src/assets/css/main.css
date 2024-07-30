@@ -1,0 +1,10 @@
+:root{
+    --text-color: rgb(219 216 216);
+    --text-color2:rgb(50, 50, 50);
+    --white-text-color:white;
+    --black-text-color:black;
+    --effect-text-color:#44c8fd;
+    --effect-text-color2:#0c98cf;
+    --container-color:rgb( 250, 252, 253);
+    --background-color:rgb(241, 245, 249);
+}
